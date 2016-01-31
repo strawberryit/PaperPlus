@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="help"
+        android:title="PaperPlus - 페이퍼의 페이지 버튼 지원"
+        android:summary="A launcher icon is designed by Freepik" />
+    <Preference
+        android:key="isModuleNotActive"
+        android:title="모듈이 활성화되지 않았습니다."
+        android:summary="Xposed Installer에서 PaperPlus를 활성화해주세요!" />
+	<PreferenceCategory
+	    android:title="전자도서관">
+	    <CheckBoxPreference
+	        android:defaultValue="false"
+	        android:key="kyobo_library"
+	        android:title="교보문고 전자도서관"
+	        android:summary="com.kyobo.ebook.b2b.phone.type3">
+	    </CheckBoxPreference>
+	    <CheckBoxPreference
+	        android:defaultValue="false"
+	        android:key="epyrus_library"
+	        android:title="이피루스 전자책도서관"
+	        android:summary="com.bms.xdfplus">
+	    </CheckBoxPreference>
+	    <CheckBoxPreference
+	        android:defaultValue="false"
+	        android:key="yes24_library"
+	        android:title="예스24 도서관"
+	        android:summary="com.incube.newepub">
+	    </CheckBoxPreference>
+	    <CheckBoxPreference
+	        android:defaultValue="false"
+	        android:key="bookcube_library"
+	        android:title="북큐브 전자도서관"
+	        android:summary="com.bookcube.digitallibrary">
+	    </CheckBoxPreference>
+	</PreferenceCategory>
+	<PreferenceCategory
+	    android:title="전자책">
+		<CheckBoxPreference
+	        android:defaultValue="false"
+	        android:key="kyobo_ebook"
+	        android:title="교보문고 EBook"
+	        android:summary="com.kyobo.ebook.common.b2c">
+	 	</CheckBoxPreference>
+		<CheckBoxPreference
+	        android:defaultValue="false"
+	        android:key="yes24_ebook"
+	        android:title="예스24 도서관"
+	        android:summary="com.yes24.ebook.fourth">
+	    </CheckBoxPreference>
+	</PreferenceCategory>
+</PreferenceScreen>
