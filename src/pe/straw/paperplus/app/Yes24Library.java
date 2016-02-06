@@ -15,6 +15,7 @@ import pe.straw.paperplus.PrefService;
 
 public class Yes24Library {
 	public static final String packageName = "com.incube.newepub";
+	public static final String packagename2 = "com.seoullib.newepubphone";
 
 	static XSharedPreferences pref = PrefService.getInstance();
 	static final String prefKey = "yes24_library";
@@ -29,6 +30,7 @@ public class Yes24Library {
 			return;	
 		PaperLogger.log("Yes24Library module is active");
 		
+		// Find paging methods
 		String className = "com.daouincube.android.ebook.epub.EpubView";
 		XposedHelpers.findAndHookMethod(className, lparam.classLoader, "loadEngine", new XC_MethodHook() {
 			protected void afterHookedMethod(MethodHookParam param) throws Throwable {
@@ -38,6 +40,7 @@ public class Yes24Library {
 			};
 		});
 		
+		// Set key listener to webview
 		className = "com.daouincube.android.ebook.epub.EpubXhtmlView";
 		XposedHelpers.findAndHookMethod(className, lparam.classLoader, "init", new XC_MethodHook(){
 			@Override
@@ -51,6 +54,7 @@ public class Yes24Library {
 	static OnKeyListener onKeyDown = new View.OnKeyListener() {
 		@Override
 		public boolean onKey(View v, int keyCode, KeyEvent event) {
+			// Key Down ¸¸ Ã³¸®
 			if (event.getAction() != KeyEvent.ACTION_DOWN)
 				return false;
 

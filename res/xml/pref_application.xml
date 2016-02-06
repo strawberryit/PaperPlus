@@ -50,5 +50,11 @@
 	        android:title="예스24 도서관"
 	        android:summary="com.yes24.ebook.fourth">
 	    </CheckBoxPreference>
+		<CheckBoxPreference
+	        android:defaultValue="false"
+	        android:key="kakaopage"
+	        android:title="카카오페이지"
+	        android:summary="com.kakao.page (애니메이션 제거, 전체화면)">
+	    </CheckBoxPreference>
 	</PreferenceCategory>
 </PreferenceScreen>
