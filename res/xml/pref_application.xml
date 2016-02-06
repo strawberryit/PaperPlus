@@ -27,13 +27,13 @@
 	        android:defaultValue="false"
 	        android:key="yes24_library"
 	        android:title="예스24 도서관"
-	        android:summary="com.incube.newepub">
+	        android:summary="com.incube.newepub\ncom.seoullib.newepubphone">
 	    </CheckBoxPreference>
 	    <CheckBoxPreference
 	        android:defaultValue="false"
 	        android:key="bookcube_library"
 	        android:title="북큐브 전자도서관"
-	        android:summary="com.bookcube.digitallibrary">
+	        android:summary="com.bookcube.digitallibrary\ncom.bookcube.bookplayer4sl">
 	    </CheckBoxPreference>
 	</PreferenceCategory>
 	<PreferenceCategory

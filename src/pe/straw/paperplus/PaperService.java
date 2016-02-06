@@ -27,6 +27,7 @@ public class PaperService implements IXposedHookLoadPackage{
 				case Yes24Library.packagename2:
 					Yes24Library.modCode(lpparam); break;
 				case BookcubeLibrary.packageName:
+				case BookcubeLibrary.packageName2:
 					BookcubeLibrary.modCode(lpparam); break;
 					
 				case KyoboEbook.packageName:
