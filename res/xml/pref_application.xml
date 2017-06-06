@@ -35,6 +35,12 @@
 	        android:title="북큐브 전자도서관"
 	        android:summary="com.bookcube.digitallibrary\ncom.bookcube.bookplayer4sl">
 	    </CheckBoxPreference>
+	    <CheckBoxPreference
+	        android:defaultValue="false"
+	        android:key="mekia_library"
+	        android:title="메키아 전자도서관"
+	        android:summary="org.mekia.android.ui">
+	    </CheckBoxPreference>
 	</PreferenceCategory>
 	<PreferenceCategory
 	    android:title="전자책">
